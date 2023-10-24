@@ -55,7 +55,7 @@ this.emptyMsg = true
             localStorage.setItem('messages_${this.userName}',JSON.stringify(records))
         },
         LoadChatRecords(){
-            const records = JSON.parse(localStorage.getItem('message_${this.userName}'))
+            const records = JSON.parse(localStorage.getItem('messages_${this.userName}'))
        if(records){
         this.emptyMsg = false,
         this.messages = records
